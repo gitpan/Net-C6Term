@@ -1,0 +1,39 @@
+Net/C6Term version 0.10
+=======================
+
+Net::C6Term provides an interface to the c6term software written by Rodolfo
+Giacometti, which allows you to connect to a C6 server (C6 is an Italian
+ICQ-like instant messaging system).
+
+c6term, along with C6 protocol specifications and other related software and
+documentation, can be found at the Open C6 project home page, at:
+
+http://openc6.extracon.it
+
+Please read the c6term documentation to find out how to connect and how to
+send commands to the C6 server.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires he module IPC::Run, and (of course) the c6term program.
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2003 Michele Beltrame
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
+
+Copyright 2003, Michele Beltrame <mb@italpro.net> - <http://www.italpro.net/mb/
+
+This library is free software; you can redistribute it and/or modify it
+under the GNU General Public License.
