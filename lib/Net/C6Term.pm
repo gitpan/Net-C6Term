@@ -6,27 +6,27 @@ use warnings;
 
 use IPC::Run();
 
-our $VERSION = 0.10;
+our $VERSION = 0.11;
 
 =head1 NAME
 
-Net::C6Term - Interface to the C6Term protocol, which allows to connect to C6 servers
+Net::C6Term - Interface to the c6term program, which allows to connect to C6 servers
 
 =head1 SYNOPSIS
 
-use strict;
-use Net::C6Term;
+    use strict;
+    use Net::C6Term;
 
-my $c6 = Net::C6Term->new();
+    my $c6 = Net::C6Term->new();
 
-$c6->add_handler(200, \&on_connect);
-$c6->add_handler('default', \&on_default);
+    $c6->add_handler(200, \&on_connect);
+    $c6->add_handler('default', \&on_default);
 
-$c6->send_event('connect', 'c6login.tin.it', 4800);
+    $c6->send_event('connect', 'c6login.tin.it', 4800);
 
-$c6->start();
+    $c6->start();
 
-$c6->finish();
+    $c6->finish();
 
 =head1 DESCRIPTION
 
